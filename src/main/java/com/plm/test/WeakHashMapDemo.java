@@ -5,6 +5,10 @@ import java.util.WeakHashMap;
 
 /**
  *  WeakHashMap
+ *      弱引用
+ *
+ *  HashMap
+ *      强引用
  *
  */
 public class WeakHashMapDemo {
