@@ -2,7 +2,18 @@ package com.plm.test;
 
 public class reverseList {
 
-    // 迭代实现
+    /**
+     *  迭代实现
+     *      pre记录当前节点左边已经反转好的链表，next记录当前节点右边未反转的链表
+     *
+     *      当前节点的后半部分链表存储到 next中，next = head.next
+     *      当前节点与左边已经反转的链表连接起来，head.next = pre
+     *      记录已经反转好的链表，pre = head
+     *      继续反转右边未处理的链表，head = next;
+     *
+     * @param head
+     * @return
+     */
     public static ListNode reverseItera(ListNode head){
         ListNode pre = null;
         ListNode next = null;
