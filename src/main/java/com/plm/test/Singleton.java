@@ -23,7 +23,7 @@ class Singleton1 {
 
     private static Singleton1 singleton1 = new Singleton1();
 
-    public Singleton1() {
+    private Singleton1() {
     }
 
     public static Singleton1 getSingleton1() {
@@ -46,7 +46,7 @@ class Singleton3 {
         singleton3 = new Singleton3();
     }
 
-    public Singleton3() {
+    private Singleton3() {
     }
 
     public static Singleton3 getSingleton3() {
@@ -59,7 +59,7 @@ class Singleton4 {
 
     private static Singleton4 singleton4 = null;
 
-    public Singleton4() {
+    private Singleton4() {
     }
 
     public static Singleton4 getSingleton4() {
@@ -79,7 +79,7 @@ class Singleton5 {
      */
     private static volatile Singleton5 singleton5 = null;
 
-    public Singleton5(){
+    private Singleton5(){
         System.out.println("Singleton 的构造函数");
     }
 
@@ -100,7 +100,7 @@ class Singleton5 {
 // 静态内部类实现单例模式
 class Singleton6 {
 
-    public Singleton6() {
+    private Singleton6() {
     }
 
     public static class InnerSClass {
